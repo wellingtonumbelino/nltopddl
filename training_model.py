@@ -10,12 +10,16 @@ from word_processor import process_text
 nl_texts = [
   "Eu quero implementar um domínio determinístico simples de um switch com predicados switch_is_off e switch_is_on e com ações switch_on e switch_off",
   "Implemente um domínio determinístico simples de um switch com predicados switch_is_off e switch_is_on e com ações switch_on e switch_off",
-  "Como implementar um domínio determinístico simples de um switch com predicados switch_is_off e switch_is_on e com ações switch_on e switch_off"
+  "Como implementar um domínio determinístico simples de um switch com predicados switch_is_off e switch_is_on e com ações switch_on e switch_off",
+  "Implemente um domínio determinístico simples de um switch",
+  "Eu quero um domínio determinístcio de um switch simples"
 ]
 
-example =  "(define: (domain switch)\n (:requirements :strips)\n\n (:predicates (switch_is_on)\n     (switch_is_off))\n\n  (:action switch_on\n  :precondition (switch_is_off)\n   :effect (and (switch_is_on))\n     (not (switch_is_off))\n)\n\n  (:action switch_off\n  :precondition (switch_is_on)\n :effect (and (switch_is_off))\n     (not (switch_is_on))\n)\n)\n"
+example = "(define: (domain switch)\n (:requirements :strips)\n\n (:predicates (switch_is_on)\n     (switch_is_off))\n\n  (:action switch_on\n   :precondition (switch_is_off)\n   :effect (and (switch_is_on))\n     (not (switch_is_off))\n  )\n\n  (:action switch_off\n  :precondition (switch_is_on)\n  :effect (and (switch_is_off))\n     (not (switch_is_on))\n )\n)\n"
 
 pddl_example = [
+  example,
+  example,
   example,
   example,
   example
@@ -31,8 +35,10 @@ def init_train():
   model = MultinomialNB()
   model.fit(X_train, y_train)
 
-  return tfidf_vectorizer, model
+  predicts = model.predict(X_test)
+  accuracy = accuracy_score(y_test, predicts)
+  report = classification_report(y_test, predicts)
 
-  # predicts = model.predict(X_test)
-  # accuracy = accuracy_score(y_test, predicts)
-  # report = classification_report(y_test, predicts)
+  print(accuracy, report)
+
+  return tfidf_vectorizer, model

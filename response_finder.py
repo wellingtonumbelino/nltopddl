@@ -5,4 +5,4 @@ def find_response(text, vectorizer, model):
   vec_text = vectorizer.transform(np_text)
   predict_pddl = model.predict(vec_text)
 
-  print(predict_pddl[0])
+  return predict_pddl[0]
