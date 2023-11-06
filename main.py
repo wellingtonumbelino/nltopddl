@@ -3,15 +3,15 @@ from word_processor import process_text
 
 def format_response(response):
   if response is None:
-    print("Sorry, I don't understand your question.\n")
+    print("Desculpe, eu não entendi a sua pergunta.\n")
   else:
-    print('\nOk, here is your code.\n\n', str(response))
+    print('\nOk, aqui está o seu código.\n\n', str(response))
 
 while True:
-  user_question = input("Send a message: ")
+  user_question = input("Envie uma mensagem: ")
 
-  if user_question.lower() == 'exit':
-    print("Shutting down")
+  if user_question.lower() == 'sair':
+    print("Desligando...")
     break
 
   response = find_response(process_text(user_question))
