@@ -1,6 +1,6 @@
-from response_finder import find_response
-from training_model import init_train
-from word_processor import process_text
+from helpers.response_finder import find_response
+from helpers.training_model import init_train
+from helpers.word_processor import process_text
 
 vectorizer, model = init_train()
 
