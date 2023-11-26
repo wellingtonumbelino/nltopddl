@@ -10,20 +10,6 @@ from helpers.word_processor import process_text
 
 nl_texts, pddl_example = get_training_data()
 
-negative_examples = [
-  "oi",
-  "olá",
-  "teste",
-  "como vai você?",
-  "que dia é hoje?",
-  "quem é você?",
-  "que horas são?"
-]
-
-for example in negative_examples:
-  nl_texts.append(example)
-  pddl_example.append("Huuum... parece que sua pergunta não está relacionada a um domínio PDDL")
-
 def init_train():
   nl_texts_processed = np.array([process_text(text) for text in nl_texts])
 
@@ -38,6 +24,7 @@ def init_train():
   accuracy = accuracy_score(y_test, predicts)
   report = classification_report(y_test, predicts)
 
-  # print(accuracy, report)
+  print(f"Acurácia: {accuracy}")
+  print(f"Classificação Report: {report}")
 
   return tfidf_vectorizer, model
