@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "65496de55b40b215f7b4b13e"
+  },
+  "pddl_id": 1000,
+  "code_example": "(define: (domain SWITCH) (:requirements :strips) (:predicates (switch_is_on) (switch_is_off)) (:action switch_on :precondition (switch_is_off) :effect (and (switch_is_on) (not (switch_is_off)))) (:action switch_off :precondition (switch_is_on) :effect (and (switch_is_off) (not (switch_is_on))))"
+},
+{
+  "_id": {
+    "$oid": "65498263d6c963233544b7a3"
+  },
+  "pddl_id": 1001,
+  "code_example": "(define (domain BLOCKS) (:requirements :strips) (:predicates (on ?x ?y) (ontable ?x) (clear ?x) (handempty) (holding ?x)) (:action pick-up :parameters (?x) :precondition (and (clear ?x) (ontable ?x) (handempty)) :effect (and (not (ontable ?x)) (not (clear ?x)) (not (handempty)) (holding ?x))) (:action put-down :parameters (?x) :precondition (holding ?x) :effect (and (not (holding ?x)) (clear ?x) (handempty) (ontable ?x))) (:action stack :parameters (?x ?y) :precondition (and (holding ?x) (clear ?y)) :effect (and (not (holding ?x)) (not (clear ?y)) (clear ?x) (handempty) (on ?x ?y))) (:action unstack :parameters (?x ?y) :precondition (and (on ?x ?y) (clear ?x) (handempty)) :effect (and (holding ?x) (clear ?y) (not (clear ?x)) (not (handempty)) (not (on ?x ?y)))))"
+},
+{
+  "_id": {
+    "$oid": "65638df5c99a2d5946e59625"
+  },
+  "pddl_id": 1002,
+  "code_example": "Huuum... parece que sua pergunta não está relacionada a um domínio PDDL"
+}]

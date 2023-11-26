@@ -1,0 +1,119 @@
+[{
+  "_id": {
+    "$oid": "65496cee5b40b215f7b4b138"
+  },
+  "nl_text": "Eu quero implementar um domínio determinístico simples de um switch com predicados switch_is_off e switch_is_on e com ações switch_on e switch_off",
+  "pddl_id": 1000
+},
+{
+  "_id": {
+    "$oid": "65496d395b40b215f7b4b139"
+  },
+  "nl_text": "Implemente um domínio determinístico simples de um switch com predicados switch_is_off e switch_is_on e com ações switch_on e switch_off",
+  "pddl_id": 1000
+},
+{
+  "_id": {
+    "$oid": "65496d785b40b215f7b4b13a"
+  },
+  "nl_text": "Como implementar um domínio determinístico simples de um switch com predicados switch_is_off e switch_is_on e com ações switch_on e switch_off",
+  "pddl_id": 1000
+},
+{
+  "_id": {
+    "$oid": "65496d9b5b40b215f7b4b13b"
+  },
+  "nl_text": "Implemente um domínio determinístico simples de um switch",
+  "pddl_id": 1000
+},
+{
+  "_id": {
+    "$oid": "65496dba5b40b215f7b4b13c"
+  },
+  "nl_text": "Eu quero um domínio determinístcio de um switch simples",
+  "pddl_id": 1000
+},
+{
+  "_id": {
+    "$oid": "6549832ed6c963233544b7a6"
+  },
+  "nl_text": "Eu quero um domínio determinístcio de blocos simples",
+  "pddl_id": 1001
+},
+{
+  "_id": {
+    "$oid": "6549835fd6c963233544b7a7"
+  },
+  "nl_text": "Eu quero um domínio simples e determinístico que organize blocos empilhados",
+  "pddl_id": 1001
+},
+{
+  "_id": {
+    "$oid": "65498380d6c963233544b7a8"
+  },
+  "nl_text": "Eu quero um domínio simples e determinístico que organize blocos empilhados com ações de pegar o bloco e despachar o bloco",
+  "pddl_id": 1001
+},
+{
+  "_id": {
+    "$oid": "654983ced6c963233544b7a9"
+  },
+  "nl_text": "Eu quero um domínio simples e determinístico que organize blocos empilhados com ações de pegar o bloco e despachar o bloco. Esse domínio terá os seguintes predicados: limpar, pegar, segurar e em cima da mesa",
+  "pddl_id": 1001
+},
+{
+  "_id": {
+    "$oid": "6549840cd6c963233544b7aa"
+  },
+  "nl_text": "Eu quero um domínio simples e determinístico que organize blocos empilhados com ações de pegar o bloco e despachar o bloco. Esse domínio terá os seguintes predicados: clear, on, ontable, handleempty e holding",
+  "pddl_id": 1001
+},
+{
+  "_id": {
+    "$oid": "65638d5ec99a2d5946e5961c"
+  },
+  "nl_text": "oi",
+  "pddl_id": 1002
+},
+{
+  "_id": {
+    "$oid": "65638d74c99a2d5946e5961d"
+  },
+  "nl_text": "olá",
+  "pddl_id": 1002
+},
+{
+  "_id": {
+    "$oid": "65638d7fc99a2d5946e5961e"
+  },
+  "nl_text": "teste",
+  "pddl_id": 1002
+},
+{
+  "_id": {
+    "$oid": "65638d8cc99a2d5946e5961f"
+  },
+  "nl_text": "como vai você?",
+  "pddl_id": 1002
+},
+{
+  "_id": {
+    "$oid": "65638d9dc99a2d5946e59620"
+  },
+  "nl_text": "quem é você?",
+  "pddl_id": 1002
+},
+{
+  "_id": {
+    "$oid": "65638dafc99a2d5946e59621"
+  },
+  "nl_text": "que dia é hoje?",
+  "pddl_id": 1002
+},
+{
+  "_id": {
+    "$oid": "65638dbcc99a2d5946e59622"
+  },
+  "nl_text": "que horas são?",
+  "pddl_id": 1002
+}]
